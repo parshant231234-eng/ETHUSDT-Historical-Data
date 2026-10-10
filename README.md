@@ -8,8 +8,9 @@ An institutional-grade, open-source archive of cleaned, standardized, and valida
 - **Symbol:** `ETHUSDT`
 - **Market:** Binance Spot
 - **Timeframe:** 1 Minute (`1m`)
-- **Total Months:** `111` months
+- **Total Archived Files:** `111` files
 - **Total Candles:** `4,802,238` 1-minute candles
+- **Last Updated:** `2026-10-10 17:06:17 UTC`
 - **Schema:** `timestamp, datetime_utc, open, high, low, close, volume, quote_volume, trade_count, taker_buy_volume, taker_buy_quote_volume`
 
 ---
@@ -36,3 +37,8 @@ url = "https://raw.githubusercontent.com/parshant231234-eng/ETHUSDT-Historical-D
 df = pd.read_csv(url)
 print(df.head())
 ```
+
+---
+
+## 🔄 Automated Ingestion Pipeline
+This repository automatically runs a weekly GitHub Actions workflow every Sunday midnight (UTC) to append newly closed daily candles and archive completed months.
