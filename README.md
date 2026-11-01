@@ -33,7 +33,7 @@ Load any month directly from GitHub's raw CDN without cloning the repository:
 ```python
 import pandas as pd
 
-url = "https://raw.githubusercontent.com/parshant231234-eng/ETHUSDT-Historical-Data/main/1m/2026/10/ETHUSDT_1m_2026-10.csv"
+url = "https://raw.githubusercontent.com/parshant231234-eng/ETHUSDT-Historical-Data/main/1m/2026/11/ETHUSDT_1m_2026-11.csv"
 df = pd.read_csv(url)
 print(df.head())
 ```
